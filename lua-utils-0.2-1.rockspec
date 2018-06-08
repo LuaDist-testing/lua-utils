@@ -1,18 +1,18 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "lua-utils"
-version = "0.1-1"
+version = "0.2-1"
 -- LuaDist source
 source = {
-  tag = "0.1-1",
+  tag = "0.2-1",
   url = "git://github.com/LuaDist-testing/lua-utils.git"
 }
 -- Original source
 -- source = {
---    url = "git://github.com/komainu8/Lua-Utils.git"
+--    url = "git://github.com/komainu8/lua-utils.git"
 -- }
 description = {
-   homepage = "https://github.com/komainu8/Lua-Utils",
+   homepage = "https://github.com/komainu8/lua-utils",
    maintainer = "Yasuhiro Horimoto <iddqsar888plekww@gmail.com>",
    license = "MIT"
 }
@@ -22,6 +22,7 @@ dependencies = {
 build = {
    type = "builtin",
    modules = {
-      ["utils"] = "utils.lua"
+      ["utils.string"] = "lib/string.lua",
+      ["utils.table"] = "lib/table.lua"
    }
 }
